@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Quiz = ({ quiz }) => {
   const { id, name, logo, total } = quiz;
   return (
@@ -7,7 +9,7 @@ const Quiz = ({ quiz }) => {
       </div>
       <p className="mt-2 font-semibold text-lg">Topic: {name}</p>
       <p>Total: {total}</p>
-      <button>Start Quiz</button>
+      <Link to={`/quiz/${id}`}>Start Quiz</Link>
     </div>
   );
 };
