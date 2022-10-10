@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className=" h-14 bg-cyan-500">
       <nav className="flex justify-between custom-width mx-auto h-full items-center">
-        <div>Quiz Buzz</div>
+        <Link to="/">Quiz Buzz</Link>
         <ul className="flex gap-4">
           <li>
             <Link to="/">Home</Link>
