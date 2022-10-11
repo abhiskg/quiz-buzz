@@ -13,7 +13,7 @@ const Statistics = () => {
   const { data } = useLoaderData();
   console.log(data);
   return (
-    <div className="custom-width mx-auto">
+    <div className="statistics-width mx-auto">
       <h1 className="mt-5 mb-10 text-center text-xl font-semibold">
         Statistics
       </h1>
