@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className=" h-14 bg-cyan-500">
-      <nav className="flex justify-between custom-width mx-auto h-full items-center">
+    <header className=" sticky top-0 z-10 h-14 bg-cyan-500">
+      <nav className="custom-width  mx-auto flex h-full items-center justify-between">
         <Link to="/">Quiz Buzz</Link>
         <ul className="flex gap-4">
           <li>
