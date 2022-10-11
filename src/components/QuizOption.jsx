@@ -13,7 +13,7 @@ const QuizOption = ({ option, quiz }) => {
 
   return (
     <>
-      <label className="flex cursor-pointer items-center gap-2 rounded-lg border p-3 hover:bg-lime-300">
+      <label className="flex cursor-pointer items-center gap-2 rounded-lg border p-3 hover:bg-primary">
         <input
           onClick={(e) => handleAnsCheck(e.target.value)}
           type="radio"

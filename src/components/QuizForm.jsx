@@ -7,27 +7,27 @@ const QuizForm = ({ quiz, index }) => {
   const { question, options, correctAnswer } = quiz;
 
   return (
-    <div className="relative mx-auto mb-5 w-2/3 p-5 shadow-md ">
-      <div className="text-center">
+    <div className="relative mx-auto mb-7 rounded-lg bg-secondary-100 p-5 shadow-md ">
+      <div className="mx-6 text-center text-lg font-medium">
         Quiz {index + 1}: {question}
       </div>
-      <div className="mt-5 grid grid-cols-2 gap-3 ">
+      <div className="mt-5 grid grid-cols-2 gap-3  ">
         {options.map((option) => (
           <QuizOption key={option} option={option} quiz={quiz} />
         ))}
       </div>
       <div
         onClick={() => setView(!view)}
-        className="absolute right-2 top-2 cursor-pointer"
+        className="absolute right-4 top-3 cursor-pointer"
       >
         {view ? (
-          <EyeIcon className="h-6 w-6  " />
+          <EyeIcon className="h-6 w-6 hover:text-secondary-200" />
         ) : (
-          <EyeSlashIcon className="h-6 w-6" />
+          <EyeSlashIcon className="h-6 w-6 hover:text-secondary-200" />
         )}
       </div>
       {view && (
-        <div className="mt-5 text-center text-green-500">
+        <div className="mt-5 text-center font-medium  ">
           Ans: {correctAnswer}
         </div>
       )}

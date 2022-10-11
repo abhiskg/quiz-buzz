@@ -1,8 +1,8 @@
 const Blog = () => {
   return (
-    <div className="custom-width mx-auto">
+    <div className="inner-width mx-auto">
       <h2 className="mt-8 text-center text-3xl font-bold">Blogs</h2>
-      <div className="mt-10">
+      <div className="mt-10 rounded-md bg-secondary-100 p-3 shadow">
         <h2 className="text-lg font-medium">
           Q1: What is the purpose of react-router?
         </h2>
@@ -17,7 +17,7 @@ const Blog = () => {
           of react router introduces different hooks to improve productivity.
         </p>
       </div>
-      <div className="mt-5">
+      <div className="mt-5  rounded-md bg-secondary-100 p-3 shadow">
         <h2 className="text-lg font-medium">Q2: How does context api work? </h2>
         <p>
           <span className="font-medium">Ans:</span> The React Context API is a
@@ -33,7 +33,7 @@ const Blog = () => {
           component that consumes and uses the state.
         </p>
       </div>
-      <div className="my-5">
+      <div className="my-5  rounded-md bg-secondary-100 p-3 shadow">
         <h2 className="text-lg font-medium">Q3: Explain useRef hook?</h2>
         <p>
           <span className="font-medium">Ans:</span> The useRef Hook allows you

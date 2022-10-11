@@ -12,7 +12,7 @@ const Home = () => {
   const { View } = useLottie(options);
   return (
     <div>
-      <div className="bg-[#fabc00]">
+      <div className="bg-primary">
         <div className="custom-width mx-auto flex items-center justify-between">
           <div>
             <h1 className="text-4xl font-bold">Quiz Buzz</h1>
@@ -23,7 +23,7 @@ const Home = () => {
           <div>{View}</div>
         </div>
       </div>
-      <div className=" custom-width mx-auto mt-5 grid grid-cols-2 gap-5 md:grid-cols-3">
+      <div className=" custom-width mx-auto my-10 grid grid-cols-2 gap-5 md:grid-cols-3">
         {data.map((quiz) => (
           <Quiz key={quiz.id} quiz={quiz} />
         ))}
