@@ -11,17 +11,19 @@ const Home = () => {
   };
   const { View } = useLottie(options);
   return (
-    <div className="custom-width mx-auto">
-      <div className="flex items-center justify-between ">
-        <div>
-          <h1 className="text-4xl font-bold">Quiz Buzz</h1>
-          <p className="text-lg font-medium">
-            A fun and effective way to test your skills.{" "}
-          </p>
+    <div>
+      <div className="bg-[#fabc00]">
+        <div className="custom-width mx-auto flex items-center justify-between">
+          <div>
+            <h1 className="text-4xl font-bold">Quiz Buzz</h1>
+            <p className="text-lg font-medium">
+              A fun and effective way to test your skills.{" "}
+            </p>
+          </div>
+          <div>{View}</div>
         </div>
-        <div>{View}</div>
       </div>
-      <div className=" mt-5 grid grid-cols-2 gap-5 md:grid-cols-3">
+      <div className=" custom-width mx-auto mt-5 grid grid-cols-2 gap-5 md:grid-cols-3">
         {data.map((quiz) => (
           <Quiz key={quiz.id} quiz={quiz} />
         ))}
