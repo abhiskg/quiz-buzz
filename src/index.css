@@ -8,3 +8,7 @@
 .inner-width {
   width: min(1000px, 98%);
 }
+
+html {
+  scroll-behavior: smooth;
+}

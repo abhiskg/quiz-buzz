@@ -2,7 +2,7 @@ import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 import QuizOption from "./QuizOption";
 
-const QuizForm = ({ quiz, index }) => {
+const QuizForm = ({ quiz, index, setCorrectAns, setWrongAns }) => {
   const [view, setView] = useState(false);
   const { question, options, correctAnswer } = quiz;
 
@@ -13,7 +13,7 @@ const QuizForm = ({ quiz, index }) => {
       </div>
       <div className="mt-5 grid grid-cols-2 gap-3  ">
         {options.map((option) => (
-          <QuizOption key={option} option={option} quiz={quiz} />
+          <QuizOption key={option} option={option} quiz={quiz} setCorrectAns={setCorrectAns} setWrongAns={setWrongAns}  />
         ))}
       </div>
       <div

@@ -1,12 +1,14 @@
 import { toast } from "react-toastify";
 
-const QuizOption = ({ option, quiz }) => {
+const QuizOption = ({ option, quiz, setCorrectAns, setWrongAns }) => {
   const { question, correctAnswer } = quiz;
 
   const handleAnsCheck = (value) => {
     if (value === correctAnswer) {
+      setCorrectAns((prev) => prev + 1);
       toast.success("Correct Answer");
     } else {
+      setWrongAns((prev) => prev + 1);
       toast.error("Wrong Answer");
     }
   };
