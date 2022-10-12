@@ -8,12 +8,18 @@ const QuizForm = ({ quiz, index, setCorrectAns, setWrongAns }) => {
 
   return (
     <div className="relative mx-auto mb-7 rounded-lg bg-secondary-100 p-5 shadow-md ">
-      <div className="mx-6 text-center text-lg font-medium">
+      <div className="mx-6 text-center font-medium sm:text-lg">
         Quiz {index + 1}: {question}
       </div>
       <div className="mt-5 grid grid-cols-2 gap-3  ">
         {options.map((option) => (
-          <QuizOption key={option} option={option} quiz={quiz} setCorrectAns={setCorrectAns} setWrongAns={setWrongAns}  />
+          <QuizOption
+            key={option}
+            option={option}
+            quiz={quiz}
+            setCorrectAns={setCorrectAns}
+            setWrongAns={setWrongAns}
+          />
         ))}
       </div>
       <div
@@ -27,7 +33,7 @@ const QuizForm = ({ quiz, index, setCorrectAns, setWrongAns }) => {
         )}
       </div>
       {view && (
-        <div className="mt-5 text-center font-medium  ">
+        <div className="mt-5 text-center font-medium text-green-800 ">
           Ans: {correctAnswer}
         </div>
       )}

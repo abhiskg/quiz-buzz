@@ -1,7 +1,7 @@
 const Blog = () => {
   return (
     <div className="inner-width mx-auto">
-      <h2 className="mt-8 text-center text-3xl font-bold">Blogs</h2>
+      <h2 className="mt-8 text-center text-2xl font-bold">Blogs</h2>
       <div className="mt-10 rounded-md bg-secondary-100 p-3 shadow">
         <h2 className="text-lg font-medium">
           Q1: What is the purpose of react-router?

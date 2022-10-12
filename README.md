@@ -1,7 +1,9 @@
-<h1>Quiz Buzz</h1>
-**Website Link:**
+<h2>Quiz Buzz</h2>
 
-- This website is made using React to give user seamless interface while practicing quiz on different topic.
-- AreaChart in statistics section shows total number of quiz.
-- React Router has been implemented for refresh free navigation, for loading quiz data and for Error handling.
-- Two different state will track the total number of correct and wrong answer while user will practice quiz.
+**Website Link:** [https://abhiskg-quiz-buzz.netlify.app/](https://abhiskg-quiz-buzz.netlify.app/)
+
+- This website is made using React to give users a seamless interface while practicing quizzes on different topics.
+- Areachart in the statistics section shows the total number of quizzes.
+- Large animation are loaded using React lazy to reduce initial bundle size.
+- React Router has been implemented for refresh-free navigation, loading quiz data, and Error handling.
+- Two different states will track the total number of correct and wrong answers while a user will practice quizzes.

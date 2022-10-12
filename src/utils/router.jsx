@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
-import ErrorPage from "../components/ErrorPage";
 import Root from "../layout/Root";
 import Home from "../screens/Home";
 import Statistics from "../screens/Statistics";
 import Blog from "../screens/Blog";
 import QuizDetails from "../screens/QuizDetails";
+import ErrorPage from "../components/404/ErrorPage";
 
 const router = createBrowserRouter([
   {

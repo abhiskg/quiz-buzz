@@ -10,10 +10,13 @@ const Quiz = ({ quiz }) => {
       </div>
       <p className="mt-2 text-lg font-semibold">Topic: {name}</p>
       <p className="mt-1 text-gray-600">Total Quiz: {total}</p>
-      <button className=" mt-2 flex items-center justify-start rounded bg-secondary-100 px-2 py-2 font-medium hover:bg-primary">
-        <Link to={`/quiz/${id}`}>Start Practice</Link>
+      <Link
+        to={`/quiz/${id}`}
+        className=" mt-2 flex w-36 items-center justify-center rounded bg-secondary-100 px-2 py-2 font-medium hover:bg-primary"
+      >
+        <span>Start Practice</span>
         <ArrowSmallRightIcon className="h-5 w-5" />
-      </button>
+      </Link>
     </div>
   );
 };
