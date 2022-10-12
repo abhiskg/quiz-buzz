@@ -20,6 +20,14 @@ const Header = () => {
           </li>
           <li className="hover:underline">
             <NavLink
+              to="/topics"
+              className={({ isActive }) => (isActive ? " underline" : "")}
+            >
+              Topics
+            </NavLink>
+          </li>
+          <li className="hover:underline">
+            <NavLink
               to="/statistics"
               className={({ isActive }) => (isActive ? " underline" : "")}
             >
@@ -68,6 +76,11 @@ const Header = () => {
           <li onClick={() => setMenu(false)}>
             <Link className="text-black" to="/home">
               Home
+            </Link>
+          </li>
+          <li onClick={() => setMenu(false)}>
+            <Link className="text-black" to="/topics">
+              Topics
             </Link>
           </li>
           <li onClick={() => setMenu(false)}>
